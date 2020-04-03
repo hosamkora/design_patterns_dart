@@ -10,5 +10,9 @@ include: package:lint/analysis_options.yaml
 #     - camel_case_types
 
 analyzer:
-#   exclude:
-#     - path/to/excluded/files/**
+  errors:
+    # error when you forget return statement
+    missing_return: error
+    # error when you forget named required param
+    missing_required_param: error
+    unused_import: error
