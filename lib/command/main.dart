@@ -30,6 +30,9 @@ void handleInput(String line, RemoteControl remote) {
     case 'd':
       remote.pressVolumeDownButton();
       break;
+    case 'undo':
+      remote.pressUndoButton();
+      break;
     default:
       print('noraml line: $line');
       break;
